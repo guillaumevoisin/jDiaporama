@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
 	var myDiapo = $(".diaporama1").jDiaporama({
+		debugMode: true,
 		transition:"random",
 		delay:2,
 		theme:"design",
@@ -19,9 +20,20 @@ $(document).ready(function(){
 		myDiapo.data("jDiaporama").next();
 	})
 	
-	$("#displayInfos").click(function(){
-		myDiapo.data("jDiaporama").changeOption("transition", "slice");
+	$("#decreaseSlices").click(function(){
+		nbSlices = myDiapo.data("jDiaporama").getOption('nbSlices');
+		myDiapo.data("jDiaporama").changeOption("nbSlices", --nbSlices);
 	})
 	
+	$("body").bind("jDiaporama:pause", function(event, pause){
+		if(pause)
+			$("#togglePause").val("Pause");
+		else
+			$("#togglePause").val("Play");
+	})
+	
+	$("#togglePause").click(function(){
+		myDiapo.data("jDiaporama").pauseSlider();
+	})
 
 });
