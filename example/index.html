@@ -6,6 +6,7 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
 		<!-- Cascading Style Sheets -->
+		<link href='http://fonts.googleapis.com/css?family=Lobster+Two&v1' rel='stylesheet' type='text/css'>
 		<link href="page.css" rel="stylesheet" type="text/css" />
 		<link href="style.css" rel="stylesheet" type="text/css" />
 
@@ -19,24 +20,32 @@
 		
 		<h1>Diaporama Simple</h1>
 
-		<ul class="diaporama1">
-			<li><img src="img/galerie/image1.jpg" alt="On the road again" title="Sur la route de l'ouest, Arizona &copy; Guillaume Voisin" /></li>
-			<li><img src="img/galerie/image14.jpg" alt="Rodeo Drive" title="A Beverly Hills &copy; Guillaume Voisin" /></li>
-			<li><img src="img/galerie/image2.jpg" alt="Venice Beach, California" /></li>
-			<li><img src="img/galerie/image3.jpg" alt="" title="Les garde-côte sur les plages de Malibu &copy; Guillaume Voisin" /></li>
-			<li><img src="img/galerie/image4.jpg" alt="Universal Studios" title="Le parc d'attractions Universal Studios &copy; Guillaume Voisin<br />Grande grande description blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla" /></li>
-			<li><img src="img/galerie/image5.jpg" alt="Hollywood Sign" title="Le fameux panneau Hollywood sur la colline &copy; Guillaume Voisin" /></li>
-			<li><img src="img/galerie/image13.jpg" alt="Burning Tree" title="Un arbre au coucher du soleil au Grand Canyon &copy; Guillaume Voisin" /></li>
-		</ul>
-		<p><input id="prev" type="button" class="button green" value="Précédent" /> <input id="next" type="button" class="button green" value="Suivant" /> <input id="decreaseSlices" type="button" class="button green" value="Diminuer le nombre de tranches" /> <input id="togglePause" type="button" class="button green" value="Pause" /></p>
-		<ul class="diaporama" style="display:none">
-			<li><img src="img/galerie/image9.jpg" alt="On the road again" title="Sur la route de l'ouest, Arizona &copy; Guillaume Voisin" /></li>
-			<li><img src="img/galerie/image10.jpg" alt="Venice Beach, California" /></li>
-			<li><img src="img/galerie/image11.jpg" alt="" title="Les garde-côte sur les plages de Malibu &copy; Guillaume Voisin" /></li>
-			<li><img src="img/galerie/image12.jpg" alt="Universal Studios" title="Le parc d'attractions Universal Studios &copy; Guillaume Voisin<br />Grande grande description blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla" /></li>
-		</ul>
-		<br />
-		<br />
+		<div class="diapo">
+			<ul class="diaporama1">
+				<li><img src="img/galerie/image1.jpg" alt="On the road again" title="Sur la route de l'ouest, Arizona &copy; Guillaume Voisin" /></li>
+				<li><img src="img/galerie/image14.jpg" alt="Rodeo Drive" title="A Beverly Hills &copy; Guillaume Voisin" /></li>
+				<li><img src="img/galerie/image2.jpg" alt="Venice Beach, California" /></li>
+				<li><img src="img/galerie/image3.jpg" alt="" title="Les garde-côte sur les plages de Malibu &copy; Guillaume Voisin" /></li>
+				<li><img src="img/galerie/image4.jpg" alt="Universal Studios" title="Le parc d'attractions Universal Studios &copy; Guillaume Voisin<br />Grande grande description blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla" /></li>
+				<li><img src="img/galerie/image5.jpg" alt="Hollywood Sign" title="Le fameux panneau Hollywood sur la colline &copy; Guillaume Voisin" /></li>
+				<li><img src="img/galerie/image13.jpg" alt="Burning Tree" title="Un arbre au coucher du soleil au Grand Canyon &copy; Guillaume Voisin" /></li>
+			</ul>
+			<ul class="diaporama" style="display:none">
+				<li><img src="img/galerie/image9.jpg" alt="On the road again" title="Sur la route de l'ouest, Arizona &copy; Guillaume Voisin" /></li>
+				<li><img src="img/galerie/image10.jpg" alt="Venice Beach, California" /></li>
+				<li><img src="img/galerie/image11.jpg" alt="" title="Les garde-côte sur les plages de Malibu &copy; Guillaume Voisin" /></li>
+				<li><img src="img/galerie/image12.jpg" alt="Universal Studios" title="Le parc d'attractions Universal Studios &copy; Guillaume Voisin<br />Grande grande description blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla blabla" /></li>
+			</ul>
+		</div>
+		
+		<div class="actions">
+			<h2>Contrôles externes</h2>
+			<p><input id="prev" type="button" class="button green" value="Précédent" /> <input id="next" type="button" class="button green" value="Suivant" /></p>
+			<p><input id="decreaseSlices" type="button" class="button green" value="Diminuer le nombre de tranches" /></p>
+			<p><input id="togglePause" type="button" class="button green" value="Pause" /></p>
+		</div>
+		<div class="clear"></div>
+		
 		<p><a style="color:#eee; font-size:12px; font-family:Arial;" href="http://www.guillaumevoisin.fr/blog/jquery/diaporama-simple-avec-jquery-nouvelle-version-jdiaporama">Revenir à l'article.</a></p>
 		
 	</body>
