@@ -2,7 +2,7 @@ $(document).ready(function(){
 
 	var myDiapo = $(".diaporama1").jDiaporama({
 		debugMode: true,
-		transition:"random",
+		transition:"slidevInverse",
 		delay:2,
 		theme:"design",
 		useThumbs: true,
@@ -34,6 +34,10 @@ $(document).ready(function(){
 	
 	$("#togglePause").click(function(){
 		myDiapo.data("jDiaporama").pauseSlider();
+	})
+	
+	$("#themeSwitcher").change(function(){
+		$(".jDiaporama").removeClass("design border").addClass($(this).val());
 	})
 
 });
