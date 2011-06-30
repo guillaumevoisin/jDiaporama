@@ -1,15 +1,12 @@
 $(document).ready(function(){
 
 	var myDiapo = $(".diaporama1").jDiaporama({
-		debugMode: true,
-		transition:"slide",
 		delay:2,
 		theme:"design",
 		useThumbs: true,
 		thumbsDir: "img/galerie/thumbs/",
 		width:512,
-		height:288/*,
-		imageClick: function(elt){ alert(elt.attr("id")); }*/
+		height:288
 	});
 	
 	$("#prev").click(function(){
@@ -35,19 +32,5 @@ $(document).ready(function(){
 	$("#togglePause").click(function(){
 		myDiapo.data("jDiaporama").pauseSlider();
 	})
-	
-	$("#themeSwitcher").change(function(){
-		$(".jDiaporama").removeClass("design border").addClass($(this).val());
-	})
-	
-	var myDiapo2 = $(".diaporama2").jDiaporama({
-		debugMode: true,
-		transition:"fade",
-		delay:2,
-		theme:"design",
-		useThumbs: false,
-		width:288,
-		height:384
-	});
 
 });
