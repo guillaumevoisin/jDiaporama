@@ -1,12 +1,14 @@
 $(document).ready(function(){
 
 	var myDiapo = $(".diaporama1").jDiaporama({
+		debugMode: true,
 		delay:2,
-		theme:"design",
+		theme:"border",
 		useThumbs: true,
 		thumbsDir: "img/galerie/thumbs/",
 		width:512,
-		height:288
+		height:288,
+		transition:"random"
 	});
 	
 	$("#prev").click(function(){

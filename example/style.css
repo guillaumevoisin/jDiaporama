@@ -188,3 +188,5 @@
 .border .jDiaporama_status .imgBack{ border:2px solid #fff; opacity:0.5 }
 .border .jDiaporama_status .imgBack:hover{ opacity:1 }
 .border .jDiaporama_status .imgBack.active{ opacity:1; border:2px solid #333 }
+.border .jDiaporama_controls .next{ right:10px; }
+.border .jDiaporama_controls .prev{ left:10px; }
