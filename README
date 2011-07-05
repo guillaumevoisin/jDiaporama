@@ -1,1 +1,64 @@
-jDiaporama
+jDiaporama v3.0 apporte son lot de nouvautés. Parmi lesquelles :
+
+ - Affichage de miniatures pour contrôler le diaporama
+ - Pas moins de 10 nouvelles animations de transitions !
+ - Ajout et configuration d’easing pour certaines animations
+ - Ajout de contrôles externes pour interagir avec le diaporama
+ - Ajout de nombreuses fonctions de callback
+ - Choix de la position des miniatures (dessus / dessous)
+ - Gestion partielle de la cohabitation d’images au format portrait et paysage
+ - Ajout d’un mode debug
+ - Diverses optimisations et améliorations
+
+Pour initialiser le script, rien de plus simple :
+
+$(".myDiapo").jDiaporama({
+	delay:4,
+	width:512,
+	height:288
+});
+
+Voici la liste des options par défaut :
+
+ - debugMode: false, 					// Affiche des informations dans la console
+ - auto: true, 							// Le diaporama se lit automatiquement
+ - delay: 3, 							// Délai avant chaque transition
+ - animationSpeed: "slow",				// Vitesse d'animation
+ - controls: true,						// Affichage des boutons de contrôle
+ - status_controls: true,				// Affichage des boutons de contrôle du bottom (miniatures)
+ - statusPosition: "bottom",			// Position de la status bar
+ - keyboard: true,						// Navigation au clavier
+ - infos: true,							// Affichage des informations sur l'image
+ - onrollover: true,					// Affiche des infos uniquement au rollover sur l'image
+ - currentimage: true,					// Affiche du compteur
+ - paused: false,						// Diaporama en pause au début
+ - boucles: 0,							// Nombre de boucles avant que le diaporama ne s'arrête, 0 = illimité
+ - sens: "right",						// Sens du diaporama par défaut
+ - random: false,						// Lecture aléatoire
+ - transition:"random",					// Transition: "fade" ou "slice" ou ["slice", "fade"] pour un affichage aléatoire parmi celles choisies
+ - animationEasing: "easeInQuint",		// Easing pour les animations
+ - theme: "default",					// Thème par défaut
+ - useThumbs: false,					// Utilisation des miniatures
+ - thumbsDir: null,						// Répertoire où se trouvent les miniatures
+ - constraintWidth: true,				// Adapter la taille de l'image automatiquement
+ - nbSlices: 10,						// Nombre de tranches horizontales pour les transitions
+ - nbSlicesH: 6,						// Nombre de tranches verticales pour les transitions
+ - onceLoaded: function(){},			// Fonction appelée une fois le script initialisé
+ - animationStarts: function(){},		// Fonction appelée à chaque début de transition
+ - animationStops: function(){},		// Fonction appelée à chaque fin de transition
+ - imageClick: function(){}				// Fonction appelée au click sur l'image
+ 
+Liste des transitions disponibles :
+
+ - fade
+ - slide
+ - slidev
+ - slideDiago
+ - slidevInverse
+ - slicesliceHide
+ - sliceBarsH
+ - sliceBarsHAlternate
+ - sliceBarsV
+ - sliceBarsVAlternate
+ - sliceBarsVFade
+ - boxRandom
